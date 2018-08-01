@@ -9,24 +9,24 @@
     <h1>isPalindrome Function</h1>
 
     <script>
-/* Checks if a character is a letter */
-function isLetter(char) {
-    char = char.toLowerCase();
-    return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
-}
-function reverseString(str) {
-    return str.split("").reverse().join("");
-}
-function ispalindrome(str){
-	if str ==reverseString(str){
-		alert("yes it's a palindrome")
+	/* Checks if a character is a letter */
+	function isLetter(char) {
+	    char = char.toLowerCase();
+	    return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 	}
-	else if str != reverseString(str){
-		alert("no it's not a palindrome")
+	function reverseString(str) {
+	    return str.split("").reverse().join("");
 	}
-}
-ispalindrome("racecar")
-// Write your isPalindrome function here!
+	function ispalindrome(str){
+		if (str ===reverseString(str)){
+			alert("yes it's a palindrome");
+		}
+		else {
+			alert("no it's not a palindrome");
+		}
+	}
+	ispalindrome( prompt("write a word"))
+	// Write your isPalindrome function here!
 
     </script>
 </body>
